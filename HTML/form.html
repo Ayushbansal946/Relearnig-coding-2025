@@ -1,0 +1,112 @@
+<html>
+<head><title>valid form</title>
+	<script type="text/javascript" >
+		
+			function upload()
+			{
+			    var y = document.getElementById("email").value;
+			    if(y=="")
+				{
+					alert("plz fill email");
+					exit();
+				}
+				if((y.charCodeAt(i)>=47 && y.charCodeAt(i)<=59) || (y.charCodeAt(i)>=65 && y.charCodeAt(i)<=91) || (y.charCodeAt(i)>=97 && y.charCodeAt(i)<=122)
+						|| (y.charCodeAt(i)==46) || (y.charCodeAt(i)==64) )
+						{
+							t +=  y.charAt(i);
+						}
+				
+				   
+				var fl = document.getElementById("upload").value;
+				var tl = fl.length;
+				var bl = tl-4;
+				var u="";
+				for(var i=bl;i<=tl;i++)
+				{
+					u += fl.charAt(i);
+				}
+				if(u!=".jpg" && u!=".png"  && u!=".gif"  )
+				{
+					alert("FIle should be in JPG,GIF & png");
+					exit();
+				}
+				
+		    }
+		
+	</script>
+</head>
+<body>
+	    <table border="0" height="50%" width="50%" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+			    <td>
+				    <fieldset>
+		                <legend align="center"> <h1>Registration form</h1></legend>
+						   
+						    <table border="0" height="100%" width="100%" cellspacing="0" cellpadding="0">
+							    <tr>
+								    <td width="50%">Student First name:</td>
+								    <td width="50%">
+								<input type="text" id="firstname"></br></td>
+								</tr>
+								<tr>
+								    <td width="50%">Middle name:</td>
+								    <td width="50%">
+								<input type="text" id="lastname"></br></td>
+								</tr>
+						         <tr>
+								    <td width="50%">Last name:</td>
+								    <td width="50%">
+								<input type="text" id="lastname"></br></td>
+								</tr>								
+								 <tr>
+								    <td width="50%">Email Id:</td>
+								    <td width="50%">
+								    <input type="email" id="email"></br></td>
+								</tr>								
+								<tr>
+								    <td width="50%">SEX:</td>
+								    <td width="50%">
+								     <input type="radio" name="1" required="" id="sex"> Male <input type="radio" name="1" required=""> Female</br></td>
+								</tr>
+								<td width="50%">Qualification:</td>
+								 <td width="50%">
+								<input type="checkbox" id="check" > BTech. <input type="checkbox" id="check"> MTech. <input type="checkbox" id="check"> Phd. </td>
+								</tr>
+								<tr>
+								    <td width="50%">State:</td>
+								    <td width="50%">
+								     <select>
+									 <option>---select---</option>
+									 <option>haryana</option>
+									 <option>punjab</option>
+									 <option>himachal</option>
+									 <option>jammu</option>
+									 <option>delhi</option></br></td>
+								</tr>
+								<tr>
+								    <td width="50%">Date</td>
+								    <td width="50%">
+								       <input type="date" id="date"></br>
+									</td>
+								</tr>
+								<tr>
+								    <td width="50%">Time</td>
+								    <td width="50%">
+								       <input type="time" id="time"></br>
+									</td>
+								</tr>
+								<tr>
+								    <td width="50%">Upload photo:</td>
+								    <td width="50%">
+								<input type="file" id="upload" ></br></td>
+								</tr>
+							</table>						   
+		            </fieldset> </br>
+					<center>
+					<input type="submit" value="submit" onclick='upload(this);'></center>
+				</td>
+			</tr>
+		</table>
+</body>
+</html>
+</html>
