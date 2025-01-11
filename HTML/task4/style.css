@@ -1,0 +1,42 @@
+*
+{
+margin:0px;
+}
+.main
+{
+height:100%;
+width:100%;
+
+}
+.main3
+{
+margin:0px auto;
+height:60px;
+width:900px; 
+border:0px solid gray;
+
+}
+.font
+{
+color:4D6B73;
+margin-left:250px;
+font-size:50px;
+
+}
+.main1
+{
+margin:0px auto;
+height:450px;
+width:900px; 
+border:0px solid gray;
+
+}
+.main2
+{
+margin:0px auto;
+height:150px;
+width:900px; 
+border:0px solid gray;
+
+
+}

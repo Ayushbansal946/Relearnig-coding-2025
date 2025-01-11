@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>image</title>
+		<link href="style.css"  type="text/css" rel="stylesheet">
+		<script type="text/javascript" >
+			function over(x)
+				{
+					document.getElementById("image1").src = document.getElementById(x).src;
+				}
+			function out(x)
+				{
+					document.getElementById("image1").src = 'cover.jpg';
+				}
+			
+		</script>
+    </head>
+    <body>
+	<div class="main">
+	    <div class="main3">
+	    <i class="font">Mahendru Automobiles</i></br></br>
+		</div>
+		<div class="main1">
+		    <img src="cover.jpg" id="image1" height="450px" width="900px">
+		</div></br></br>
+		<div class="main2">
+		    <div class="1"><marquee direction="left">
+		       <img src="1.jpg" height="150px" width="140px" id="image2" onmouseover='over("image2");' onmouseout='out("image2");'> &nbsp;
+				<img src="2.jpg" height="150px" width="140px" id="image3" onmouseover='over("image3");' onmouseout='out("image3");'> &nbsp;
+				<img src="3.jpg" height="150px" width="140px" id="image4" onmouseover='over("image4");' onmouseout='out("image4");'> &nbsp;
+				<img src="4.jpg" height="150px" width="140px" id="image5" onmouseover='over("image5");' onmouseout='out("image5");'> &nbsp;
+				<img src="5.jpg" height="150px" width="140px" id="image6" onmouseover='over("image6");' onmouseout='out("image6");'> &nbsp;
+				<img src="6.jpg" height="150px" width="140px" id="image7" onmouseover='over("image7");' onmouseout='out("image7");'>
+		    </marqsuee></div> 
+		</div>
+	</div>
+    </body>
+</html>
