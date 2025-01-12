@@ -6,7 +6,8 @@ let bol=true;
 let dec=10n;
 let e=undefined;
 let nul=null;
-let obj1=("red" ,"green","blue");// dont use {} for object that dosent contain key value pair
+let obj=("red" ,"green","blue");// dont use {} for object that dosent contain key value pair
+let obj1=["red" ,"green","blue"];// dont use [] for array object that dosent contain key value pair
 let obj2 = { name:"ayush bansal" , age:27 };// let obj2={ name:"ayush", age:27};
 let sim=Symbol("abc");
 let ch='a';
@@ -17,7 +18,8 @@ console.log(typeof bol);
 console.log(typeof dec);
 console.log(typeof e);
 console.log(typeof nul);
-console.log(typeof obj1);// console will log object three times beacuse we have declared object three times
+console.log(typeof obj);//console will log object 3 times beacuse we have declared object three times
+console.log(typeof obj1);// console will log object all times beacuse we have declared array object with three times
 console.log(typeof obj2);//console will log object two times beacuse we have declared object two times
 console.log(typeof sim);
 console.log(typeof ch);
