@@ -1,4 +1,4 @@
-// number and object
+// number and premetive data type
 let num1=10;// number
 let num2=new Number(10);// object
 console.log(num1);// 10
@@ -15,7 +15,7 @@ console.log(typeof b);// object
 // string
 let str1="hello";// string
 let str2=new String("hello");// object
-let str3=`${str1} world my name is "ayush2"`;// template literal
+let str3=`${str1} world my name is "ayush2"`;// string interpolation we can use backtick to use string interpolation and add variable in string using ${variable} 
 let str4='hello';// string
 console.log(str1);// hello
 console.log(str2);// string: hello
