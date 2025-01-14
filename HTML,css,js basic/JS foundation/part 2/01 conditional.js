@@ -52,3 +52,13 @@ switch (day) {
     console.log("invalid day");
     break;
 }
+//ternary operator
+let num2 = 4;
+let result = num2 > 10 ? "num2 is greater than 10" : "num2 is less than 10";
+console.log(result);// num2 is less than 10
+
+//short circuit operator
+let num3 = 10;
+let num4 = 20;
+let result2 = num3 > num4 && "num3 is greater than num4";
+console.log(result2);// false
