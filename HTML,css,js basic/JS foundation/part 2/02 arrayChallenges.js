@@ -67,9 +67,10 @@ topCities.pop();
 
 let europeanCities = ["Paris", "Rome"];
 let asianCities = ["Tokyo", "Bangkok"];
-let worldCities = europeanCities.concat(asianCities);
+let worldCities = [...europeanCities, ...asianCities];// merge two arrays using spread operator in a new array
+//let worldCities = europeanCities.concat(asianCities); // another way to merge two arrays using concat method in a new arrayS
 
-console.log(worldCities);
+console.log( worldCities);
 
 /* 
 9. You have an array named `teaMenu` containing `"masala chai"`, `"oolong tea"`, `"green tea"`, and `"earl grey"`. 
