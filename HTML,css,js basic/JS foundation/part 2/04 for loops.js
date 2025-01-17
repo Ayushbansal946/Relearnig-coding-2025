@@ -82,3 +82,14 @@ for (let city in cityPopulations) {
 console.log(citypopulations2);
 
 // for each loop
+console.log("for each loop");
+
+numbers.forEach((number, index) => {
+  console.log(number, index);
+})
+
+// for in loop
+console.log("for in loop");
+for (let number in numbers) {
+  console.log(number);
+}
