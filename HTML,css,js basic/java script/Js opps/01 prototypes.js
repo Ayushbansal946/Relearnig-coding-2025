@@ -22,6 +22,9 @@ let teala={
 //  __proto__:genericcar,  // this is not a good way to inherit the properties of genericcar object to teala object
 }
 Object.setPrototypeOf(teala,genericcar);// this is the best way to inherit the properties of genericcar object to teala object
+
 console.log(`teala`,teala);// teala object will inherit the properties of genericcar object it will show in console the inherit  properties of genericcar object as well as the properties of teala object
+
 console.log(`Object.get prototype of teala`,Object.getPrototypeOf(teala));// this will only show the prototype of teala object which is inharited from genericcar object
+
 console.log(`Object.get prototype of genericcar`,Object.getPrototypeOf(genericcar));// this will show the tyers property of genericcar object
