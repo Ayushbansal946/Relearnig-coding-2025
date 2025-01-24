@@ -75,7 +75,7 @@ class BankAccount {
 let account = new BankAccount();
 // console.log(account.getBalance());
 
-// Abstraction
+// Abstraction - Hiding the complexity and showing only the essentials
 
 class CoffeMachine {
   start() {
@@ -131,6 +131,7 @@ class Calculator {
 // console.log(miniCalc.add(2, 3));
 
 // console.log(Calculator.add(2, 3));
+
 
 // Getters and setters
 
