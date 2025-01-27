@@ -1,0 +1,45 @@
+.h
+{
+font-family:Harlow Solid;
+font-size:55;
+text-shadow:5px 0px 12px #00ff00;
+}
+.h:hover
+{
+	text-shadow:5px 0px 12px #5100ff;	
+}
+
+.h2
+{
+font-family:Brush Script MT;
+font-size:55;
+text-shadow:5px 0px 12px #2AFF55;
+}
+.h2:hover
+{
+	text-shadow:5px 0px 12px #00ff00;	
+}
+
+
+.i
+{
+border:2px solid green;
+
+box-shadow:5px 5px 5px #00ff00;	
+}
+.i:hover
+{
+	border:2px solid #5100ff;
+	box-shadow:10px 10px 20px #5100ff;
+}
+.i1
+{
+border:2px solid green;
+border-radius:999px 0px 999px 0px;	
+box-shadow:5px 5px 5px #00ff00;	
+}
+.i1:hover
+{
+	border:2px solid #FF0055;
+	box-shadow:10px 10px 20px #FF0055;
+}
