@@ -1,10 +1,6 @@
-<html>
-<head>
-<title>
-</title>
-<script>
+
 function sw1()
-{
+
 {
 var a,b,c;
 a=document.getElementById("i1").src;
@@ -15,9 +11,7 @@ b=c;
 document.getElementById("i1").src=a;
 document.getElementById("i2").src=b;
 }
-}
 function sw2()
-{
 {
 var a,b,c;
 a=document.getElementById("i2").src;
@@ -28,9 +22,7 @@ b=c;
 document.getElementById("i2").src=a;
 document.getElementById("i3").src=b;
 }
-}
 function sw3()
-{
 {
 var a,b,c;
 a=document.getElementById("i3").src;
@@ -41,9 +33,7 @@ b=c;
 document.getElementById("i3").src=a;
 document.getElementById("i6").src=b;
 }
-}
 function sw4()
-{
 {
 var a,b,c;
 a=document.getElementById("i4").src;
@@ -54,9 +44,8 @@ b=c;
 document.getElementById("i4").src=a;
 document.getElementById("i7").src=b;
 }
-}
 function sw5()
-{
+
 {
 var a,b,c;
 a=document.getElementById("i5").src;
@@ -67,9 +56,7 @@ b=c;
 document.getElementById("i5").src=a;
 document.getElementById("i4").src=b;
 }
-}
 function sw6()
-{
 {
 var a,b,c;
 a=document.getElementById("i6").src;
@@ -80,9 +67,7 @@ b=c;
 document.getElementById("i6").src=a;
 document.getElementById("i5").src=b;
 }
-}
 function sw7()
-{
 {
 var a,b,c;
 a=document.getElementById("i7").src;
@@ -93,10 +78,8 @@ b=c;
 document.getElementById("i7").src=a;
 document.getElementById("i8").src=b;
 }
-}
 function sw8()
 {
- {
 var a,b,c;
 a=document.getElementById("i8").src;
 b=document.getElementById("i9").src;
@@ -105,10 +88,8 @@ a=b;
 b=c;
 document.getElementById("i8").src=a;
 document.getElementById("i9").src=b;
- }
 }
 function sw9()
-{
  {
 var a,b,c;
 a=document.getElementById("i9").src;
@@ -119,23 +100,3 @@ b=c;
 document.getElementById("i9").src=a;
 document.getElementById("i1").src=b;
  }
-}
-</script>
-</head>
-<link href="p1.css"rel="stylesheet"type="text/css">
-<body background="b2.jpg">
-	<embed src="ab.mp3"hidden="true"></embed>
-<hr>
-<h1 class="h"><b><i>S_o_L_v_E___i_T___i_F___y_O_u___C_a_N </h1>
-<div class="i1"><img src="./img/a3.jpg"width="300"height="200"id="i1"onclick="sw1()"></div>
-<div class="i2"><img src="./img/a6.jpg"width="300"height="200"id="i2"onclick="sw2()"></div>
-<div class="i3"><img src="./img/a9.jpg"width="300"height="200"id="i3"onclick="sw3()"></div>
-<div class="i"><img src="./img/p1.jpg"width="400"height="200"id="i"></br></div>
-<div class="i4"><img src="./img/"width="300"height="200"id="i4"onclick="sw4()"></div>
-<div class="i5"><img src="./img/a4.jpg"width="300"height="200"id="i5"onclick="sw5()"></div>
-<div class="i6"><img src="./img/a8.jpg"width="300"height="200"id="i6"onclick="sw6()"></div>
-<div class="i7"><img src="./img/a1.jpg"width="300"height="200"id="i7"onclick="sw7()"></div>
-<div class="i8"><img src="./img/a5.jpg"width="300"height="200"id="i8"onclick="sw8()"></div>
-<div class="i9"><img src="./img/a7.jpg"width="300"height="200"id="i9"onclick="sw9()"></div>
-</body>
-</html>
