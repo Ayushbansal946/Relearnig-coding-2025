@@ -1,132 +1,45 @@
 .h
 {
 margin-top:2%;
-margin-left:18%;
+align-items: center;
+text-align: center;
 font-family:Harlow Solid;
 font-size:55;
-text-shadow:5px 0px 12px #00ff00;
+text-shadow:5px 0px 12px #8b5afc;
+color: #c0bfbf;
 }
 .h:hover
 {
-	text-shadow:5px 0px 12px #FF0055;	
+	text-shadow:5px 0px 12px #8800ff;	
 }
 
 .h2
 {
-margin-top:2%;
-margin-left:18%;
 font-family:Brush Script MT;
 font-size:55;
-text-shadow:5px 0px 12px #2AFF55;
+text-shadow:5px 0px 12px #8b5afc;
+color: #c0bfbf;
 }
 .h2:hover
 {
-	text-shadow:5px 0px 12px #00ff00;	
+	text-shadow:5px 0px 12px #8800ff;
 }
 
 .m
-{
-	margin-top:-20;
-	margin-left:150;
+{margin: 20px;
+align-items: center;
+text-align: center;
+
 }
 .i
 {
 border:2px solid green;
-border-radius:0px 999px 0px 999px;	
-margin-left:-5;
+margin:5;
 box-shadow:5px 5px 5px #00ff00;	
 margin-top:;
 }
 .i:hover
 {
-	border:2px solid #FF0055;
-	box-shadow:10px 10px 20px #FF0055;
-}
-.i1
-{
-border:2px solid green;
-border-radius:999px 0px 999px 0px;	
-margin-left:0;box-shadow:5px 5px 5px #00ff00;	
-margin-top:0;
-}
-.i1:hover
-{
-	border:2px solid #FF0055;
-	box-shadow:10px 10px 20px #FF0055;
-}
-.i2
-{
-border:2px solid green;
-border-radius:999px 000px 999px 000px;	
-margin-left:-3;box-shadow:5px 5px 5px #00ff00;	
-margin-top:0;
-}
-.i2:hover
-{
-	border:2px solid #FF0055;
-	box-shadow:10px 10px 20px #FF0055;
-}
-
-
-.i3
-{
-border:2px solid green;
-border-radius:0px 999px 0px 999px;	
-margin-left:-0;
-box-shadow:5px 5px 5px #00ff00;	
-margin-top:-1;
-}
-.i3:hover
-{
-	border:2px solid #FF0055;
-	box-shadow:10px 10px 20px #FF0055;
-}
-.i4
-{
-border:2px solid green;
-border-radius:999px 50px 999px 50px;	
-margin-left:0;box-shadow:5px 5px 5px #00ff00;	
-margin-top:-40;
-}
-.i4:hover
-{
-	border:2px solid #FF0055;
-	box-shadow:10px 10px 20px #FF0055;
-}
-.i5
-{
-border:2px solid green;
-border-radius:50px 999px 50px 999px;	
-margin-left:0;box-shadow:5px 5px 5px #00ff00;	
-margin-top:0;
-}
-.i5:hover
-{
-	border:2px solid #FF0055;
-	box-shadow:10px 10px 20px #FF0055;
-}
-
-.i6
-{
-border:2px solid green;
-border-radius:50px 999px 50px 999px;	
-margin-left:0;box-shadow:5px 5px 5px #00ff00;	
-margin-top:-40;
-}
-.i6:hover
-{
-	border:2px solid #FF0055;
-	box-shadow:10px 10px 20px #FF0055;
-}
-.i7
-{
-border:2px solid green;
-border-radius:999px 50px 999px 50px;	
-margin-left:0;box-shadow:5px 5px 5px #00ff00;	
-margin-top:0;
-}
-.i7:hover
-{
-	border:2px solid #FF0055;
-	box-shadow:10px 10px 20px #FF0055;
+	border:2px solid #8800ff;
+	box-shadow:10px 10px 20px #8800ff;
 }
