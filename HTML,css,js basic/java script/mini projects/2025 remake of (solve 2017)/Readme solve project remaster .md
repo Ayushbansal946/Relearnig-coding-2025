@@ -92,6 +92,9 @@ It also serves as an excellent practice project to sharpen my skills after takin
 ### Current Version: **1.1**  
 - Code restructuring in progress.  
 
+### Versions **1.2**
+- **JavaScript** refactoring to align with modern best practices.
+The changes are well documented and uploded in a seprate levelsystem.md file 
 Stay tuned for further updates and improved versions!  
 
 ---

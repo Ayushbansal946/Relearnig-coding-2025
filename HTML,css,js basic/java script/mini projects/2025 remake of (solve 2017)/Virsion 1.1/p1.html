@@ -2,22 +2,78 @@
 <head>
 <title>
 </title>
-</head>
+<script >
+	// takes the input from the user from a drop down list of levels from level 1 to level 12 and changes the value of the script tag withe the id of scripts to the value of the selected secipt and the level no like Script1.js if the user selects level 1.
+	function select_level() {
+  var level = document.getElementById("level").value;
+  console.log("Selected Level: " + level);
+
+  // Remove old script if it exists
+  var oldScript = document.getElementById('dynamicScript');
+  if (oldScript) {
+    oldScript.parentNode.removeChild(oldScript);
+  }
+
+  // Disable images until script loads
+  var images = document.querySelectorAll('img');
+  images.forEach(function(img) {
+    img.style.pointerEvents = 'none';
+  });
+
+  // Load new script
+  var script = document.createElement('script');
+  script.id = 'dynamicScript';
+  script.src = "./scripts/Script" + level + ".js";
+  script.onload = function() {
+    // Assign event handlers after the script has loaded
+    document.getElementById('i1').onclick = sw1;
+    document.getElementById('i2').onclick = sw2;
+    document.getElementById('i3').onclick = sw3;
+    document.getElementById('i4').onclick = sw4;
+    document.getElementById('i5').onclick = sw5;
+    document.getElementById('i6').onclick = sw6;
+    document.getElementById('i7').onclick = sw7;
+    document.getElementById('i8').onclick = sw8;
+    document.getElementById('i9').onclick = sw9;
+
+    // Enable images now that the script has loaded
+    images.forEach(function(img) {
+      img.style.pointerEvents = 'auto';
+    });
+  };
+  document.head.appendChild(script);
+}
+
+</script>
 <link href="p1.css"rel="stylesheet"type="text/css">
-<body background="b2.jpg">
-	<embed src="ab.mp3"hidden="true"></embed>
+<script src="" id="scripts"></script>
+</head>
+<body bgcolor="#1a1a1a" onload="select_level()">
+	<select id="level" onchange="select_level()">
+		<option value="1">Level 1</option>
+		<option value="2">Level 2</option>
+		<option value="3">Level 3</option>
+		<option value="4">Level 4</option>
+		<option value="5">Level 5</option>
+		<option value="6">Level 6</option>
+		<option value="7">Level 7</option>
+		<option value="8">Level 8</option>
+		<option value="9">Level 9</option>
+		<option value="10">Level 10</option>
+		<option value="11">Level 11</option>
+		<option value="12">Level 12</option>
+	</select>
 <hr>
 <h1 class="h"><b><i>S_o_L_v_E___i_T___i_F___y_O_u___C_a_N </h1>
-<div class="i1"><img src="./img/a3.jpg"width="300"height="200"id="i1"onclick="sw1()"></div>
-<div class="i2"><img src="./img/a6.jpg"width="300"height="200"id="i2"onclick="sw2()"></div>
-<div class="i3"><img src="./img/a9.jpg"width="300"height="200"id="i3"onclick="sw3()"></div>
+<div class="i1"><img src="./img/a3.jpg"width="300"height="200"id="i1"></div>
+<div class="i2"><img src="./img/a6.jpg"width="300"height="200"id="i2"></div>
+<div class="i3"><img src="./img/a9.jpg"width="300"height="200"id="i3"></div>
 <div class="i"><img src="./img/p1.jpg"width="400"height="200"id="i"></br></div>
-<div class="i4"><img src="./img/"width="300"height="200"id="i4"onclick="sw4()"></div>
-<div class="i5"><img src="./img/a4.jpg"width="300"height="200"id="i5"onclick="sw5()"></div>
-<div class="i6"><img src="./img/a8.jpg"width="300"height="200"id="i6"onclick="sw6()"></div>
-<div class="i7"><img src="./img/a1.jpg"width="300"height="200"id="i7"onclick="sw7()"></div>
-<div class="i8"><img src="./img/a5.jpg"width="300"height="200"id="i8"onclick="sw8()"></div>
-<div class="i9"><img src="./img/a7.jpg"width="300"height="200"id="i9"onclick="sw9()"></div>
-<script src="./scripts/Script1.js" ></script>
+<div class="i4"><img src="./img/a2.jpg"width="300"height="200"id="i4"></div>
+<div class="i5"><img src="./img/a4.jpg"width="300"height="200"id="i5"></div>
+<div class="i6"><img src="./img/a8.jpg"width="300"height="200"id="i6"></div>
+<div class="i7"><img src="./img/a1.jpg"width="300"height="200"id="i7"></div>
+<div class="i8"><img src="./img/a5.jpg"width="300"height="200"id="i8"></div>
+<div class="i9"><img src="./img/a7.jpg"width="300"height="200"id="i9"></div>
 </body>
 </html>
