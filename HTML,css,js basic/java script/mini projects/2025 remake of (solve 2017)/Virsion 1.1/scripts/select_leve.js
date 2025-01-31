@@ -6,6 +6,7 @@
 
   // Remove old script if it exists
   var oldScript = document.getElementById('dynamicScript');
+  console.log(oldScript);
   if (oldScript) {
     oldScript.parentNode.removeChild(oldScript);
   }
