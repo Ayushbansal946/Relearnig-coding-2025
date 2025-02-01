@@ -20,3 +20,8 @@ let newItem = document.createElement('li');
 newItem.textContent = 'chocolate';
 document.getElementById("shoppingList").appendChild(newItem);
 })
+//example 5
+document.getElementById('removeLastTask').addEventListener('click', function(){
+document.getElementById('taskList').firstChild.remove();
+
+})
