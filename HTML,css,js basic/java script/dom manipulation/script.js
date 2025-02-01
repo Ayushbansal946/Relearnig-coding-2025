@@ -22,6 +22,15 @@ document.getElementById("shoppingList").appendChild(newItem);
 })
 //example 5
 document.getElementById('removeLastTask').addEventListener('click', function(){
-document.getElementById('taskList').firstChild.remove();
+document.getElementById('taskList').firstElementChild.remove();
 
+})
+
+//example 6
+//example 7
+//example 8
+document.getElementById("feedbackForm").addEventListener('submit', function(event){
+  event.preventDefault();//this will prevent the default behaviour of the form which is to refresh the page
+let feedbackInput=document.getElementById('feedbackInput').value;
+document.getElementById("feedbackDisplay").textContent=feedbackInput;  
 })
