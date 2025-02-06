@@ -1,118 +1,33 @@
+function swapElements(id1, id2) {
+  var temp = document.getElementById(id1).src;
+  document.getElementById(id1).src = document.getElementById(id2).src;
+  document.getElementById(id2).src = temp;
+}
 
-function sw1()
-{
-{
-var a,b,c;
-a=document.getElementById("i1").src;
-b=document.getElementById("i7").src;
-c=a;
-a=b;
-b=c;
-document.getElementById("i1").src=a;
-document.getElementById("i7").src=b;
+function sw1() {
+  swapElements("i1", "i7");
 }
+function sw2() {
+  swapElements("i2", "i3");
 }
-function sw2()
-{
-{
-var a,b,c;
-a=document.getElementById("i2").src;
-b=document.getElementById("i3").src;
-c=a;
-a=b;
-b=c;
-document.getElementById("i2").src=a;
-document.getElementById("i3").src=b;
+function sw3() {
+  swapElements("i3", "i6");
 }
+function sw4() {
+  swapElements("i4", "i1");
 }
-function sw3()
-{
-{
-var a,b,c;
-a=document.getElementById("i3").src;
-b=document.getElementById("i6").src;
-c=a;
-a=b;
-b=c;
-document.getElementById("i3").src=a;
-document.getElementById("i6").src=b;
+function sw5() {
+  swapElements("i5", "i8");
 }
+function sw6() {
+  swapElements("i6", "i4");
 }
-function sw4()
-{
-{
-var a,b,c;
-a=document.getElementById("i4").src;
-b=document.getElementById("i1").src;
-c=a;
-a=b;
-b=c;
-document.getElementById("i4").src=a;
-document.getElementById("i1").src=b;
+function sw7() {
+  swapElements("i7", "i9");
 }
+function sw8() {
+  swapElements("i8", "i2");
 }
-function sw5()
-{
-{
-var a,b,c;
-a=document.getElementById("i5").src;
-b=document.getElementById("i8").src;
-c=a;
-a=b;
-b=c;
-document.getElementById("i5").src=a;
-document.getElementById("i8").src=b;
-}
-}
-function sw6()
-{
-{
-var a,b,c;
-a=document.getElementById("i6").src;
-b=document.getElementById("i4").src;
-c=a;
-a=b;
-b=c;
-document.getElementById("i6").src=a;
-document.getElementById("i4").src=b;
-}
-}
-function sw7()
-{
-{
-var a,b,c;
-a=document.getElementById("i7").src;
-b=document.getElementById("i9").src;
-c=a;
-a=b;
-b=c;
-document.getElementById("i7").src=a;
-document.getElementById("i9").src=b;
-}
-}
-function sw8()
-{
-{
-var a,b,c;
-a=document.getElementById("i8").src;
-b=document.getElementById("i2").src;
-c=a;
-a=b;
-b=c;
-document.getElementById("i8").src=a;
-document.getElementById("i2").src=b;
-}
-}
-function sw9()
-{
-{
-var a,b,c;
-a=document.getElementById("i9").src;
-b=document.getElementById("i1").src;
-c=a;
-a=b;
-b=c;
-document.getElementById("i9").src=a;
-document.getElementById("i1").src=b;
-}
+function sw9() {
+  swapElements("i9", "i1");
 }
