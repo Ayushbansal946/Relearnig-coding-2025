@@ -8,16 +8,14 @@ document.addEventListener('DOMContentLoaded', ()=> {
   
   function renderTask(task){
   const li = document.createElement("li");
-  li.innerHTML =`
-  <span>${task.text}</span>
-  <button class="li-btn" data-id="${task.id}">Delete</button>
-  `
+  li.innerHTML =`<span>${task.text}</span>
+  <button class="li-btn">Delete</button>`
   todoList.appendChild(li);
   }
 
 addtskBtn.addEventListener("click", () => {
   if (input.value==="") return;
-    const tasktext=input.value.trim();
+    const tasktext=input.value.trim();//.trim() removes the white spaces 
     const task = {
     id:Date.now(),
     text:tasktext,
