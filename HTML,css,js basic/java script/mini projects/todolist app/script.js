@@ -9,30 +9,46 @@ document.addEventListener('DOMContentLoaded', ()=> {
   tasks.forEach(task => renderTask(task));  
   
   addtskBtn.addEventListener("click", () => {
+  const tasktext=input.value.trim();//.trim() removes the white spaces 
   if (input.value==="") return;
-    const tasktext=input.value.trim();//.trim() removes the white spaces 
     //task creation
-    const task = {
+    const newtask = {
     id:Date.now(),
     text:tasktext,
     completed:false,
     };
     //pushing the task to the tasks array
-    tasks.push(task);
+    tasks.push(newtask);
     savedTasks();
+    renderTask(tasks[tasks.length-1]);
     input.value = "";//clear the input field
     //console.log(tasks);
-})
-  function savedTasks(){
-  localStorage.setItem("tasks",JSON.stringify(tasks));
-  renderTask(tasks[tasks.length-1]);
-}
+});
 
-  function renderTask(task){
+function renderTask(task){
   const li = document.createElement("li");
+  if(task.completed)  li.classList.add("completed");
+
   li.innerHTML =`<span>${task.text}</span>
   <button class="li-btn">Delete</button>`
+  li.addEventListener("click",function(e){
+    if(e.target.tagName==="BUTTON")return 
+    task.completed = !task.completed;
+    li.classList.toggle("completed");
+    savedTasks();
+  });
+  li.querySelector("button").addEventListener("click",function(e){
+    e.stopPropagation();//to stop the event from bubbling up
+    tasks=tasks.filter(t=>t.id!==task.id);
+    li.remove();
+    savedTasks();
+  })
   todoList.appendChild(li);
   }
 
+  function savedTasks(){
+  localStorage.setItem("tasks",JSON.stringify(tasks));
+  //delete task
+  }
+  savedTasks();
 });
