@@ -28,21 +28,18 @@ document.addEventListener('DOMContentLoaded', ()=> {
 function renderTask(task){
   const li = document.createElement("li");
   if(task.completed)  li.classList.add("completed");
-
   li.innerHTML =`<span>${task.text}</span>
   <button class="li-btn">Delete</button>`
   li.addEventListener("click",function(e){
     if(e.target.tagName==="BUTTON")return 
     task.completed = !task.completed;
     li.classList.toggle("completed");
-    savedTasks();
-  });
+    savedTasks();});
   li.querySelector("button").addEventListener("click",function(e){
     e.stopPropagation();//to stop the event from bubbling up
     tasks=tasks.filter(t=>t.id!==task.id);
     li.remove();
-    savedTasks();
-  })
+    savedTasks();})
   todoList.appendChild(li);
   }
 
