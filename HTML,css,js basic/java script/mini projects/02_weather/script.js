@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-const city=document.getElementById('city-input');
-const searchbtn=document.getElementById('get-weather-btn');
-const weatherContainer=document.getElementById('weather-info');
-const weatherCity=document.getElementById('city-name');
-const temperature=document.getElementById('temperature');
-const description=document.getElementById('description');
-const errormessage=document.getElementById('error-message');
+const cityInput=document.getElementById('city-input');
+const getWeatherBtn=document.getElementById('get-weather-btn');
+const weatherInfo=document.getElementById('weather-info');
+const cityNameDisplay=document.getElementById('city-name');
+const temperatureDisplay=document.getElementById('temperature');
+const descriptionDisplay=document.getElementById('description');
+const errorMessage=document.getElementById('error-message');
 const apky=`0df2bb80ade0b8259e799762e7c6af6d`;
-searchbtn.addEventListener('click',function(){
-  const cityname=city.value.trim();
-  if(!cityname)return;
+getWeatherBtn.addEventListener('click',function(){
+  const cityName=cityInput.value.trim();
+  if(!cityName)return;
 
 
 })
@@ -24,5 +24,7 @@ function displayweatherdata(data)
 }
 function displayerror()
 {
-
+weatherContainer.classList.add('hidden');
+errormessage.classList.remove('hidden');
+}
 });
