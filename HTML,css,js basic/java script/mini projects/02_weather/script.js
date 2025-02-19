@@ -7,24 +7,50 @@ const temperatureDisplay=document.getElementById('temperature');
 const descriptionDisplay=document.getElementById('description');
 const errorMessage=document.getElementById('error-message');
 const apky=`0df2bb80ade0b8259e799762e7c6af6d`;
-getWeatherBtn.addEventListener('click',function(){
+getWeatherBtn.addEventListener('click', async function(){
   const cityName=cityInput.value.trim();
   if(!cityName)return;
-
+  //it may throw an error 
+  //server/database is always in the other side of the world
+  
+  try{
+    const weatherData=await featchweatherdata(cityName)
+    displayweatherdata(weatherData);
+  }
+  catch(error){
+    console.error(error);
+    showError();
+  }
 
 })
 
-function featchweatherdata(city)
+async function featchweatherdata(city)
 {
-
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apky}`;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(error.message);
+  }
 }
-function displayweatherdata(data)
+function displayweatherdata(WeatherData)
 {
-
+  const{name,main,weather}=WeatherData;
+  cityNameDisplay.textContent=name;
+  temperatureDisplay.textContent=`Temperature:${main.temp}°C`;  ;
+  descriptionDisplay.textContent=`Weather: ${weather[0].description}`;
+  weatherInfo.classList.remove('hidden');
+  errorMessage.classList.add('hidden');
+//console.log(WeatherData);
 }
-function displayerror()
+function showError()
 {
-weatherContainer.classList.add('hidden');
-errormessage.classList.remove('hidden');
+weatherInfo.classList.remove('hidden');
+errorMessage.classList.remove('hidden');
 }
 });
