@@ -42,8 +42,13 @@ function displayweatherdata(WeatherData)
 {
   const{name,main,weather}=WeatherData;
   cityNameDisplay.textContent=name;
-  temperatureDisplay.textContent=`Temperature:${main.temp}°C`;  ;
+  temperatureDisplay.textContent=`Temperature:${main.temp}°C`;  
+  let newItem = document.createElement("img");
+  newItem.src =`https://openweathermap.org/img/wn/${weather[0].icon}.png` ;
+  weatherInfo.appendChild(newItem);;
   descriptionDisplay.textContent=`Weather: ${weather[0].description}`;
+
+
   weatherInfo.classList.remove('hidden');
   errorMessage.classList.add('hidden');
 //console.log(WeatherData);
