@@ -79,7 +79,7 @@ checkOutBtn.addEventListener("click",()=>{
   cartTotalMsg.classList.add("hidden");
   cartItems.innerText="Thank you for shopping with us";
   localStorage.setItem("Cart",JSON.stringify(cart));
-  renderCart();
+  
 });
 cartItems.addEventListener("click",(e)=>{
   if(e.target.tagName==="BUTTON"){
@@ -89,6 +89,7 @@ cartItems.addEventListener("click",(e)=>{
   }
 });
 function deleteItem(id){
+  
   cart=cart.filter((item)=>item.id!==id);
   renderCart();
   localStorage.setItem("Cart",JSON.stringify(cart));
