@@ -41,7 +41,25 @@ h2 {
   align-items: center;
   border-radius: 5px;
 }
-
+.added-cart-item{
+  background-color: #333333;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+.delete-btn
+{
+  background-color: #ea0000;
+  border: none;
+  padding: 3px 10px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 .product button {
   background-color: #6200ea;
   border: none;
