@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const checkOutBtn=document.getElementById("checkout-btn");
 
   const products=[ 
-  {id:1,name:"product1",price:99,quantity:0},
-  {id:2,name:"product2",price:250,quantity:0},
-  {id:3,name:"product3",price:499,quantity:0}];//products array
+  {id:1,name:"product1",price:99,quantity:1},
+  {id:2,name:"product2",price:250,quantity:1},
+  {id:3,name:"product3",price:499,quantity:1}];//products array
   
   let cart=JSON.parse(localStorage.getItem("Cart")) ||[];    //products will be pushed here
   renderCart();
@@ -35,7 +35,7 @@ productList.addEventListener("click",(e)=>{
 });
 
 function addtocart(product){
-  product.quantity++;
+  //product.quantity++;
   const temp =cart.find(p=>p.id===product.id);
   if (temp){
     temp.quantity++;
