@@ -8,9 +8,9 @@ let expenses=[];
 let totalAmount=Caltotal();
 expenseForm.addEventListener('submit',(e)=>{
 e.preventDefault();
-const name=expenseName.Value.trim();
-const amount=parseFloat(expenseAmount.Value.trim());
-if(name!==""&& !isNaN(amount) && amount>0 )
+let name=expenseName.Value;
+let amount=parseFloat(expenseAmount.Value);
+if(name!=="" && !isNaN(amount) && amount>0 )
     {
       
     }
