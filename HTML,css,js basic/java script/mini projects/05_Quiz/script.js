@@ -33,8 +33,17 @@ function startQuiz(){
 function showQuestion()
 {nextBtn.classList.add("hidden")
 questionText.textContent=questions[currentQuestionIndex].questtion;
+choicesList.innerHTML=""//clear previos choices
+questions[currentQuestionIndex].choices.forEach(choice => {
+  const li=document.createElement('li')
+  li.textContent=choice;
+  li.addEventListener("click",()=>selectedAnswer(choice))
+  choicesList.appendChild(li);  
+})
+}
+function selectedAnswer(choice)
+{
 
 }
-
 
 })
