@@ -24,9 +24,11 @@ const restartBtn=document.getElementById("restart-btn")
 const startBtn=document.getElementById("start-btn")
 
 startBtn.addEventListener("click",startQuiz)
-
+nextBtn.addEventListener("click",nextQuestion)
+restartBtn.addEventListener("click",restart)
 function startQuiz(){
    startBtn.classList.add("hidden")
+   nextBtn.classList.add('hidden')
    questionContainer.classList.remove("hidden")
    showQuestion();
 }
@@ -42,8 +44,34 @@ questions[currentQuestionIndex].choices.forEach(choice => {
 })
 }
 function selectedAnswer(choice)
-{
+{const correctAnswer=questions[currentQuestionIndex].answer;
+  if(choice===correctAnswer){
+    currentScore++;
+  }
+  nextBtn.classList.remove("hidden")
 
 }
+function nextQuestion(){
+  currentQuestionIndex++;
+  if(currentQuestionIndex<questions.length)
+  {
+    showQuestion();
+  }
+  else{
+    showResult()
+  }
+}
+function showResult(){
+  questionContainer.classList.add('hidden')
+  resultContainer.classList.remove('hidden')
 
+  score.textContent=`${currentScore} out of ${questions.length}`
+}
+function restart(){
+  questionContainer.classList.remove('hidden')
+  resultContainer.classList.add('hidden')
+  currentQuestionIndex=0;
+  currentScore=0;
+  showQuestion()
+}
 })
