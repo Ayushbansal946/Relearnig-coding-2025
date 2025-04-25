@@ -55,3 +55,5 @@ if(command==="add"){
 else{
   console.log("Command not found!");
 }
+//The above code is used to create a simple todo list application using node.js and file system module.
+//The code is used to add, remove and list the tasks in the todo list.
