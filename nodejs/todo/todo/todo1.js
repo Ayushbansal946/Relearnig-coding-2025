@@ -36,8 +36,14 @@ const addTask=(task)=>
 const removeTask=(index)=>
 {
  const tasks=loadTasks();
- 
- saveTasks(tasks.filter((t,i)=>i!==index-1));
+ if(index<0 || index>=tasks.length)
+  {
+    console.log("Invalid index!");
+    return;
+  }
+else{
+  saveTasks(tasks.filter((t,i)=>i!==index-1));
+}
 }
 //taking the data from the file and converting it to JSON format
 const command=process.argv[2];
