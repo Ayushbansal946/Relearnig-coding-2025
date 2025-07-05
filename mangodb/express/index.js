@@ -5,7 +5,7 @@ const port = 3000;
 
 /*
 app.get("/", (req, res) => {
-  res.send("Hello from Hitesh and his tea!");
+  res.send("Hello from Ayush and his tea!");
 });
 
 app.get("/ice-tea", (req, res) => {
@@ -13,7 +13,7 @@ app.get("/ice-tea", (req, res) => {
 });
 
 app.get("/twitter", (req, res) => {
-  res.send("hiteshdotcom");
+  res.send("ayush.com");
 });
 */
 

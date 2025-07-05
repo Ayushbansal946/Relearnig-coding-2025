@@ -27,9 +27,17 @@ const listTasks = () => {
   const tasks = loadTasks();
   tasks.forEach((task, index) => console.log(`${index + 1} - ${task.task}`));
 };
-
-// TODO: Remove task by index
-
+const removeTask = (index) => {
+  index = index - 1; // Convert to zero-based index
+  const tasks = loadTasks();
+  if (index < 0 || index > tasks.length) {
+    console.log("Invalid task index");
+    return;
+  }
+  tasks.splice(index, 1);
+  saveTasks(tasks);
+  console.log("Task removed");
+}
 const command = process.argv[2];
 const argument = process.argv[3];
 

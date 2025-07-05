@@ -7,10 +7,9 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   const filePath = path.join(
     __dirname,
-    req.url === "/" ? "index.html" : req.url
-  );
+    req.url === "/" ? "index.html" : req.url);
 
-  const extName = path.extname(filePath).toLocaleLowerCase();
+  const extName = String(path.extname(filePath)).toLocaleLowerCase();
 
   let mimeTypes = {
     ".html": "text/html",
