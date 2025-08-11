@@ -1,0 +1,47 @@
+# Git Commands Cheat Sheet
+
+## Basic Commands learned
+- `git status` - Check the status of your working directory and staging area.
+- `git init` - Initialize a new Git repository.
+- `git add <file>` - Stage changes for commit.
+- `git add foldername\` - Add all files and folders in the foldername Stage changes for commit.
+- `git add .\` - Add all files and folders in the present folder Stage changes for commit.
+- `git commit -m "message"` - Commit staged changes with a message.
+- `git commit "` - Commit staged changes with a message unig code editor.
+- `git log --oneline` - View commit history.
+- `git branch` - List all branches.
+- `git branch <branch-name>` - Create a new branch.
+- `git branch -d <branch-name>` - deleting the branch.
+- `git checkout -b <branch-name>` - Create a new branch and Switch to a branch.
+- `git switch -c <branch-name>` - Create a new branch and Switch to a branch.
+- `git checkout <branch-name>` - Switch to a branch.
+- `git checkout <branch-name>` - Switch to a branch.
+- `git checkout <head~2>` - moves head to 2 commits before.
+- `git checkout commit_ID` - moves head to a specific commit before.
+- `git merge <branch-name>` - Merge a branch into the current branch.
+- `git diff` - Show changes between commits, branches, or working directory.
+- `git stash` - Save changes temporarily.
+- `git stash pop` - Save changes temporarily.
+- `git stash list` - Save changes temporarily.
+- `git stash apply` - Reapply stashed changes.
+- `git stash apply stash{0}` - Reapply stashed changes from stash list.
+- `git remote add origin https://github.com/Ayushbansal946/lear-git.git` - Adds origin as the rmote with the url of repo.
+- `git push -u origin main` - Add code from main branch to the origin at the github repo. 
+
+notes
+commit before switching the branches.
+git push might take a login access.
+
+
+## not learned
+- `git clone <repository-url>` - Clone an existing repository.
+- `git remote add origin <repository-url>` - Add a remote repository.
+- `git push` - Push changes to the remote repository.
+- `git pull` - Fetch and merge changes from the remote repository.
+- `git reset <file>` - Unstage a file.
+- `git checkout -- <file>` - Discard changes in the working directory.
+- `git revert <commit>` - Revert a specific commit.
+- `git tag <tag-name>` - Create a tag.
+- `git push origin <tag-name>` - Push a tag to the remote repository.
+- `git config --global user.name "Your Name"` - Set global username.
+- `git config --global user.email "your.email@example.com"` - Set global email.
