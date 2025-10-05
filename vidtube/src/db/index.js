@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
 import {DB_name} from "../constants.js";
-
+//always asume the datavase is in another content use async await
 const connectDB=async()=>{
+    //there can be error while connecting to database so use try catch
 try{
    const connectionInstance= await mongoose.connect(`${process.env.MONGODB_URI}/${DB_name}`);
     console.log("Connected to MongoDB");
