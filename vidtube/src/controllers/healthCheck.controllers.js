@@ -1,6 +1,6 @@
-import { apiResponse } from "../utils/aipResponse";
- 
-import { asyncHandler} from "../utils/asyncHandler";
+import { apiResponse } from "../utils/apiResponse.js";
+
+import asyncHandler from "../utils/asyncHandler.js";
 
  const healthCheckController = asyncHandler(async (req,res,next) => {
     return res
